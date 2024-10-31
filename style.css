@@ -10,74 +10,27 @@ h1 {
     font-weight: 900;
     margin: 0;
     font-size: 8vh;
+    color: #ffffff;
 }
 a {
     text-decoration: none;
     color: #ffffff;
 }
+/*a:hover {
+    color: #F1C1BD;
+
+}
+a:active {
+    color: #DFDADE;
+}*/
+
 div {
     margin: 0;
-    border: solid;
-    box-sizing: border-box;
 }
 #header {
     text-align: center;
     height: 10vh;
     padding: 1vh auto;  
-}
-#coglingo {
-    width: 100vw;
-    height: 90vh;
-}
-#about {
-    width: 50vw;
-    height: 85vh;
-    float: left;
-}
-#pic {
-    width: 50vw;
-    height: 75vh;
-    float: right;
-}
-#knn-title {
-    width: 50vw;
-    height: 10vh;
-    float: right;
-}
-#math-tutor-1 {
-    width: 36vw; 
-    height: 70vh;
-    float: left;
-}
-#knn {
-    width: 64vw;
-    height: 70vh;
-    float: right;
-}
-#math-tutor-2 {
-    width: 44vw;
-    height: 70vh;
-    float: left;
-}
-#reimanndescartes {
-    width: 56vw;
-    height: 70vh;
-    float: right;
-}
-#makingmoneymove {
-    width: 40vw;
-    height: 140vh;
-    float: left;
-}
-#smart-savvy-2023 {
-    width: 60vw;
-    height: 70vh;
-    float: right;
-}
-#smart-savvy-2024 {
-    width: 60vw;
-    height: 70vh;
-    float: right;
 }
 #footer {
     width: 100vw;
@@ -86,6 +39,5 @@ div {
     text-align: center;
 }
 h3 {
-    font-size: 100%;
     font-family: 'Courier New', Courier, monospace;
 }
