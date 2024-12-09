@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}    
 body {
     margin: 0;
     padding: 0;
@@ -12,6 +15,20 @@ h1 {
     font-size: 8vh;
     color: #ffffff;
 }
+h2 {
+    font-family: "Cedarville Cursive", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h3 {
+    font-family: "Cedarville Cursive", serif;
+    font-weight: 700;
+    font-style: normal;
+    color:#3939a9;
+}
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+}
 a {
     text-decoration: none;
     color: #ffffff;
@@ -25,19 +42,27 @@ a:active {
 }*/
 
 div {
-    margin: 0;
+    border: 1px solid green;
+    float: center;
+    margin: 1vh 1vw;
+    padding: 1vh 3vw; /*top right bottom left*/
 }
-#header {
-    text-align: center;
-    height: 10vh;
-    padding: 1vh auto;  
+
+#parent {
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1vh 1vw;
 }
-#footer {
+
+#seiu {
+    background: linear-gradient(0.95turn, #b31942, #c05572, #dca4b3, #f1d9df, #d4deed, #93abca, #4770a2, #0a3161); /* #ffffff,*/
+}
+
+
+#header, #footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 10vh;
-    padding: auto auto;
-    text-align: center;
-}
-h3 {
-    font-family: 'Courier New', Courier, monospace;
 }
