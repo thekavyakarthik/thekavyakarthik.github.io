@@ -21,10 +21,11 @@ h2 {
     font-style: normal;
 }
 h3 {
-    font-family: "Cedarville Cursive", serif;
+    font-family: "Amatic Sc"; /*"Cedarville Cursive", serif;*/
     font-weight: 700;
+    font-size: 6vh;
     font-style: normal;
-    color:#3939a9;
+    color:#6b6bd5;
 }
 h4 {
     font-family: 'Courier New', Courier, monospace;
@@ -42,9 +43,9 @@ a:active {
 }*/
 
 div {
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     float: center;
-    margin: 1vh 1vw;
+    margin: 1vh 2.5vw;
     padding: 1vh 3vw; /*top right bottom left*/
 }
 
@@ -54,12 +55,27 @@ div {
     padding: 1vh 1vw;
 }
 
+#reimanndescartes {
+    background: linear-gradient(0.65turn, #f2ebd8 5%, #CA6D68);
+}
+
+#savvy {
+    background: linear-gradient(0.15turn, #75ffff, #ffc0cb, #C4A484, #5A5A5A);
+}
 #seiu {
     background: linear-gradient(0.95turn, #b31942, #c05572, #dca4b3, #f1d9df, #d4deed, #93abca, #4770a2, #0a3161); /* #ffffff,*/
 }
 
+#makingmoneymove {
+    background: linear-gradient(rgba(255, 165, 0, 0.15), rgba(0, 0, 0, 0.20)), url("assets/money-tree.jpg");
+}
 
-#header, #footer {
+#agggtm {
+    background: linear-gradient(0.3turn, rgba(136, 8, 8, 0.65), rgba(0, 0, 0, 0.45)), url("assets/img17.jpg");
+}
+
+header, footer {
+    margin: 2vh 0;
     display: flex;
     align-items: center;
     justify-content: center;
