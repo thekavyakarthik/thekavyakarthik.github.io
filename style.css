@@ -4,10 +4,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #d3d3ff;
+    background-color: #e6d1f2; /* #d3d3ff;*/
     width: 100vw;
     overflow-x: hidden;
 }
+
 h1 {
     font-family: "Amatic SC"; /*"Cedarville Cursive";*/
     font-weight: 900;
@@ -25,7 +26,7 @@ h3 {
     font-weight: 700;
     font-size: 6vh;
     font-style: normal;
-    color:#6b6bd5;
+    color:#353587; /*#6b6bd5;*/
 }
 h4 {
     font-family: 'Courier New', Courier, monospace;
@@ -49,12 +50,30 @@ div {
     padding: 1vh 3vw; /*top right bottom left*/
 }
 
+#text {
+    margin: 2.5vh 4.5vw;
+    padding: 0.05vh 1vw;
+    border-left: 0.15vw solid #6b6bd5;
+    background: linear-gradient(0.65turn, #CA6D68 5%, #6b6bd5);
+}
+
+hr {
+    border-bottom: 1px solid green;
+    margin: 0 5vw;
+}
 #parent {
     justify-content: center;
     margin: 0 auto;
     padding: 1vh 1vw;
 }
 
+#athena {
+    background: linear-gradient(0.65turn, #101315 5%, #f54082);
+}
+
+#coglingo {
+    background: linear-gradient(0.55turn, yellow 5%, #101315);
+}
 #reimanndescartes {
     background: linear-gradient(0.65turn, #f2ebd8 5%, #CA6D68);
 }
