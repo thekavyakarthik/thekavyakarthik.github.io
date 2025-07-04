@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 10px;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*GRID VIEW*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    /*border: 1px solid black;*/
+    width: 100%;
+}
+
+.grid-item {
+  background-color: lavender;
+  padding: 20px;
+  text-align: center;
+  /*border: 1px solid black;*/
+}
+
+/*STYLE*/
+.date {
+    font-family: "Reenie Beanie", cursive; /*"Amatic SC"; /*"Cedarville Cursive";*/
+
+}
+
+.title {
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.subtitle {
+    font-family: "Cedarville Cursive", serif;
+    margin: 0;
+}
