@@ -1,75 +1,61 @@
-* {
-    margin: 0;
-}
-
 body {
-    background-color: #e6d1f2; /* #d3d3ff;*/
-    width: 100%;
-    overflow-x: hidden;
+  margin: 10px;
+  min-height: 90vh;
+  background-color: lavender;
 }
 
-h1 {
-    font-family: "Reenie Beanie", cursive; /*"Amatic SC"; /*"Cedarville Cursive";*/
-    font-weight: 900;
-    font-size: 8vh;
-    margin: 0;
-    color: #ffffff;
-}
-h2 {
-    font-family: "Cedarville Cursive", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-h3 {
-    font-family: "Amatic Sc"; /*"Cedarville Cursive", serif;*/
-    font-weight: 700;
-    font-size: 6vh;
-    font-style: normal;
-}
-h4 {
-    font-family: 'Courier New', Courier, monospace;
-}
 a {
-    text-decoration: none;
-    /*color: #ffffff;*/
-}
-/*a:hover {
-    color: #F1C1BD;
-
-}
-a:active {
-    color: #DFDADE;
-}*/
-
-div {
-    border: 1px solid green;
-    float: center;
-    margin: 1vh 2.5vw;
-    padding: 1vh 3vw; /*top right bottom left*/
+  text-decoration: none;
+  color: rgb(158, 158, 212);
 }
 
-hr {
-    border-bottom: 1px solid green;
-    margin: 0 5vw;
-}
-#parent {
-    justify-content: center;
-    margin: 0 auto;
-    padding: 1vh 1vw;
+/*GRID VIEW*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    /*border: 1px solid black;*/
+    width: 100%;
 }
 
+.grid-item {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  /*border: 1px solid black;*/
+}
+
+/*STYLE*/
+.date {
+    font-family: "Reenie Beanie", cursive; /*"Amatic SC"; /*"Cedarville Cursive";*/
+    margin: 0;
+}
+
+.title {
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.subtitle {
+    font-family:"Space Grotesk", sans-serif;
+    margin: 0;
+}
+ 
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 header {
-    margin: 2vh 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  margin-bottom: 2vh;
 }
-
 footer {
-    margin-top: 2vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  margin-top: 2vh;
+}
+.heading {
+  font-family: "Amatic Sc", cursive;
+  font-weight: 700;
+  font-size: 6vh;
+  margin: 0;
+  color: rgb(158, 158, 212);
 }
