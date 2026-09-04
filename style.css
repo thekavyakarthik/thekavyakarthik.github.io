@@ -1,40 +1,113 @@
 body {
-  margin: 10px;
-  min-height: 90vh;
+  /*margin: 10px;
+  min-height: 90vh;*/
   background-color: lavender;
 }
 
 a {
   text-decoration: none;
-  color: rgb(158, 158, 212);
+  color: #ffffff; /*#ededfa;/* rgb(158, 158, 212);*/
+}
+
+h2 {
+  font-size: min(3vh, 3vw);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: min(2.5vh, 2.5vw);
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* FIXING HEADER AND ALLOWING CENTER OF ELEMENTS */
+#bar {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  margin: 0;
+  justify-content: center;
   /*border: 1px solid black;*/
+  margin-bottom: min(2vh, 2vw); 
+  background-color: rgb(189, 190, 229);
 }
 
 .heading {
   margin: 0;
-  margin-bottom: min(2vh, 2vw);
-  font-size: min(6vh, 6vw);
-  color: rgb(158, 158, 212);
-  border: 1px solid black;
+  font-family: "Amatic Sc", cursive;
+  font-weight: 900;
+  font-size: min(8vh, 8vw);
+  /*border: 1px solid black;*/
+  width:auto;
 }
-.intro {
+
+#subheading {
   margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  /*border: 1px solid black;*/
+  width:auto;
+}
+
+.sub-link {
+  margin: 0;
+  width: auto;
+  /*border: 1px solid black;*/  
+  font-family: "Amatic Sc", cursive;
+  font-weight: 700;
+  font-size: min(3.5vh, 3.5vw);
+}
+
+.intro {
+  margin: min(2vh, 2vw);
   color: rgb(158, 158, 212);
+  /*border: 1px solid black;  */
+}
+
+.flex-layout {
+  display: flex;
+}
+
+.block-layout {
+  display: block;
+}
+
+#rabbit-hole {
+  width: auto;
+  /*border: 1px solid black;*/
+  margin: 0 min(2vh, 2vw);
+}
+
+#scrollable-image {
   border: 1px solid black;
+  margin: 0 auto;
+}
+
+.isometric-view {
+  width: 100%;
+  height: auto;
 }
 
 /* FONTS */
 .montserrat-normal {
   font-family: "Montserrat", sans-serif;
-  font-size: min(3vh, 3vw);
+  /*font-size: min(3vh, 3vw);*/
   font-optical-sizing: auto;
-  font-weight: 500;
+  /*font-weight: 500;*/
   font-style: normal;
 }
 
 .montserrat-italic {
   font-family: "Montserrat", sans-serif;
-  font-size: min(2.5vh, 2.5vw);
+  /*font-size: min(2.5vh, 2.5vw);*/
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: italic;

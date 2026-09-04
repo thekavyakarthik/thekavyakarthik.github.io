@@ -8,22 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic SC" />
     <link rel="icon" sizes="64x64" href="./assets/icon.png" type="image/png" /><!--that small image on the left side of ur browser name-->
 </head>
 <body>
-    <header class="bar">
-        <h1 class="heading"><a href="https://thekavyakarthik.github.io/">Kavya Karthik</a></h1>
-    </header>
-    <h2 class="intro montserrat-normal">Hi, I'm a COMPUTER SCIENCE Student w/ intended expansion to MECHANICAL ENGINEERING.</h2>
-    <h3 class="intro montserrat-italic">I am currently a <u>second year</u> bachelor's student at the University of Washington. In the past year, I have been exploring projects, research, and opportunities to expand my knowledge and skills in the field of Computer Science and Mechanical Engineering.</h3>
-        
+    <div id="bar">
+        <div id="heading">
+            <h1 class="heading"><a href="https://thekavyakarthik.github.io/">Kavya Karthik</a></h1>
+        </div>
+        <div id="subheading">
+            <div id="sub-link">
+                <h3 class="sub-link"><a href="https://www.linkedin.com/in/kavya-karthik/">LINKEDIN</a></h3>
+            </div>
+            <div id="sub-link">
+                <h3 class="sub-link"><a href="./assets/Kavya Karthik.pdf" target="_blank">RESUME</a></h3>
+            </div>
+        </div>
     </div>
+    <div id="intro">
+        <div id="intro-picture">
+            <img id="intro-picture-image" src="./assets/profile.jpg" alt="Kavya Karthik" />
+        </div>
+        <div id="intro-text">
+            <h2 class="intro montserrat-normal">Hi, I'm a second-year Computer Science student at the University of Washington.</h2>
+            <h3 class="intro montserrat-normal">In the past year, I have been working on projects, and exploring research and other opportunities to expand my knowledge and skills in the fields of Computer Science and Mechanical Engineering. In my free time, I like to draw and try out new food spots. I tutor other students in mathematics and physics whenever the opportunity arises. I enjoy dancing and have learnt an Indian classical dance form for over a decade now!</h3>
+        </div>
+    </div>
+
+    <div id="rabbit-hole">
+        <a href="./orchid.html">
+            <h2>Current Rabbit Hole: Reverse Engineering Lego</h2>
+            <div id="scrollable-image">
+                <img class="isometric-view" src="./assets/orchid/isometric.png" alt="Orchid" />
+            </div>
+        </a>
+    </div>
+
     <!--<button id="reorder">View Chronologically</button>-->
     <footer>
         <h3 class="montserrat-intro">&lt;/KavyaKarthik&gt;</h3>
     </footer>
 </body>
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </html>
 
 <!--FORMAT-->

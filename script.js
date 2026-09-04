@@ -1,27 +1,61 @@
-let chronological = false;
-const container = document.getElementById("grid-container");
-const ogOrder = Array.from(container.querySelectorAll(".grid-item")); // stores custom order in array
-const reorderBt = document.getElementById("reorder");
+const vw = window.innerWidth;
+const vh = window.innerHeight;
 
-reorderBt.addEventListener("click", function() {
-    const events = Array.from(container.querySelectorAll(".grid-item"));
-
-    // ordering chronologically
-    if (!chronological) {
-        events.sort((a, b) => {
-            const dateA = new Date(a.getAttribute("data-date"));
-            const dateB = new Date(b.getAttribute("data-date"));
-            return dateA - dateB;
-        });
-
-        reorderBt.textContent = "View Custom Order";
-        chronological = true;
-    } else { // ordering using custom order
-        events.splice(0, events.length, ...ogOrder);
-        reorderBt.textContent = "View Chronologically";
-        
-        chronological = false;
-    }
-
-    events.forEach(event => container.appendChild(event));
+document.addEventListener("DOMContentLoaded", () => {
+    offsetIntro();
+    calculateIntroDimensions();
+    scrollableImageWidth();
 });
+
+// offset the intro section dynamically based on the height of the header
+function offsetIntro() {
+    const divHeader = document.getElementById('bar');
+    const headerHeight = divHeader.offsetHeight;
+
+    const body = document.body;
+    body.style.marginTop = `${headerHeight}px`;
+}
+
+function calculateIntroDimensions() {
+    const divIntro = document.getElementById('intro');
+    const divIntroPicture = document.getElementById('intro-picture');
+    const divIntroText = document.getElementById('intro-text');
+    const introImage = document.getElementById('intro-picture-image');
+    let widthIntroPicture;
+    let widthIntroText;
+
+    if (vw > vh) {
+        // Calculate the width for intro section
+        divIntro.classList.toggle("flex-layout", true);
+        // divIntro.classList.toggle("block-layout", false);
+        widthIntroPicture = 0.4 * vh;
+        widthIntroText = vw - widthIntroPicture;
+
+        divIntroPicture.style.width = `${widthIntroPicture}px`;
+        divIntroText.style.width = `${widthIntroText}px`;
+        divIntroPicture.style.height = `${widthIntroPicture}px`;
+        introImage.src = './assets/profile-portrait.jpeg';
+    } else {
+        // calculate the height for intro section
+        //divIntro.classList.toggle("flex-layout", false);
+        divIntro.classList.toggle("block-layout", true);
+        introImage.src = './assets/profile-landscape.jpeg';
+        // widthIntroPicture = vw;
+        // widthIntroText = vw;
+
+        // divIntroPicture.style.height = `${heightIntroPicture}px`;
+        // divIntroText.style.height = `${heightIntroText}px`;
+    }
+    // divIntroPicture.style.width = `${widthIntroPicture}px`;
+    // divIntroText.style.width = `${widthIntroText}px`;
+}
+
+function scrollableImageWidth() {
+    const divHeader = document.getElementById('bar');
+    const headerHeight = divHeader.offsetHeight;
+
+    const divScrollableImage = document.getElementById('scrollable-image');
+    const scrollableWidth = vh - headerHeight - 0.1 * vh; // subtracting 10% of vh for padding
+    
+    divScrollableImage.style.width = `${scrollableWidth}px`;
+}
