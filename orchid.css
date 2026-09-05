@@ -1,0 +1,29 @@
+.date {
+    margin: min(2vh, 2vw);
+    color: rgb(158, 158, 212);
+}
+
+.caption {
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(158, 158, 212);
+}
+
+.rabbit-text {
+    margin: 0 min(2vh, 2vw);
+    color: rgb(158, 158, 212);
+}
+
+#image-collage {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#image-collage img {
+    margin: min(1vw, 1vh) min(5vw, 5vh);
+    /*border: 1px solid black;*/
+    border-bottom: 2px double rgb(158, 158, 212);
+}

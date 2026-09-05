@@ -4,6 +4,7 @@ const vh = window.innerHeight;
 document.addEventListener("DOMContentLoaded", () => {
     offsetIntro();
     scrollableImageResize();
+    imageCollageGenerator();
 });
 
 // offset the intro section dynamically based on the height of the header
@@ -21,7 +22,7 @@ function scrollableImageHeight() {
     const headerHeight = divHeader.offsetHeight;
 
     const divScrollableImage = document.getElementById('scrollable-image');
-    const scrollableHeight = vh - headerHeight - 0.1 * vh; // subtracting 10% of vh for padding
+    const scrollableHeight = vh - headerHeight;
     
     divScrollableImage.style.height = `${scrollableHeight}px`;
 }
@@ -42,4 +43,35 @@ function scrollableImageResize() {
         isometricView.style.width = `${vw}px`;
         isometricView.style.height = `auto`;
     }
+}
+
+function imageCollageGenerator() {
+    // Defining the images
+    const partList = [
+        { src: './assets/orchid/flower-iso1.png', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
+        { src: './assets/orchid/flower-back1.png', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
+        { src: './assets/orchid/leg-left-iso1.png', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
+        { src: './assets/orchid/leg-bottom1.png', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
+        { src: './assets/orchid/leaf-iso1.png', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
+        { src: './assets/orchid/green-buds.png', width: 'auto', height: 'min(40vw, 40vh)', alt: 'Lego parts' },
+        { src: './assets/orchid/orchid-topsection.png', width: 'auto', height: 'min(40vw, 40vh)', alt: 'Lego parts' },
+        { src: './assets/orchid/p2-rightsection.png', width: 'auto', height: 'min(40vw, 40vh)', alt: 'Lego parts' }
+    ];
+
+    const gallery = document.getElementById('image-collage');
+
+    partList.forEach(imageData => {
+        const img = document.createElement('img');
+        
+        img.src = imageData.src;
+        img.alt = imageData.alt;
+        
+        img.style.width = imageData.width;
+        img.style.height = imageData.height;
+        
+        // Optional: Prevent images from stretching awkwardly
+        // img.style.objectFit = 'cover'; 
+        
+        gallery.appendChild(img);
+    });
 }
