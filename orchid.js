@@ -48,14 +48,14 @@ function scrollableImageResize() {
 function imageCollageGenerator() {
     // Defining the images
     const partList = [
-        { src: './assets/orchid/flower-iso1.png', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
-        { src: './assets/orchid/flower-back1.png', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
-        { src: './assets/orchid/leg-left-iso1.png', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
-        { src: './assets/orchid/leg-bottom1.png', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
-        { src: './assets/orchid/leaf-iso1.png', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
-        { src: './assets/orchid/green-buds.png', width: 'auto', height: 'min(40vw, 40vh)', alt: 'Lego parts' },
-        { src: './assets/orchid/orchid-topsection.png', width: 'auto', height: 'min(40vw, 40vh)', alt: 'Lego parts' },
-        { src: './assets/orchid/p2-rightsection.png', width: 'auto', height: 'min(40vw, 40vh)', alt: 'Lego parts' }
+        { src: './assets/orchid/flower-iso1.*', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
+        { src: './assets/orchid/flower-back1.*', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
+        { src: './assets/orchid/leg-left-iso1.8', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
+        { src: './assets/orchid/leg-bottom1.*', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
+        { src: './assets/orchid/leaf-iso1.*', width: 'auto', height: 'min(25vw, 25vh)', alt: 'Lego parts' },
+        { src: './assets/orchid/green-buds.*', width: 'auto', height: 'min(40vw, 40vh)', alt: 'Lego parts' },
+        { src: './assets/orchid/orchid-topsection.*', width: 'auto', height: 'min(40vw, 40vh)', alt: 'Lego parts' },
+        { src: './assets/orchid/p2-rightsection.*', width: 'auto', height: 'min(40vw, 40vh)', alt: 'Lego parts' }
     ];
 
     const gallery = document.getElementById('image-collage');
