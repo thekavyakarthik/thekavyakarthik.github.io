@@ -38,17 +38,24 @@
     </div>
 
     <div id="rabbit-hole">
+        <a href="./orchid.html">
             <h2 class="rabbit montserrat-normal"><b>Current Rabbit Hole: Reverse Engineering Lego</b></h2>
-            <div id="scrollable-image">
-                <button id="up">&#8593;</button> <!--up arrow symbol-->
-                <button id="left">&#8592;</button> <!--left arrow symbol-->
-            
+        </a>
+        <div id="scrollable-image">
+            <button id="up">&#8593;</button> <!--up arrow symbol-->
+            <button id="left">&#8592;</button> <!--left arrow symbol-->
+            <button id="right">&#8594;</button> <!--right arrow symbol-->
+
+            <a href="./orchid.html">
                 <img class="isometric-view" id="main-image" src="./assets/orchid/isometric.png" alt="Orchid" />
- 
-                <button id="right">&#8594;</button> <!--right arrow symbol-->
-                <button id="down">&#8595;</button> <!--down arrow symbol-->
-            </div>
+            </a>
+        </div>
+        <div id="down">
+            <button id="down">&#8595;</button> <!--down arrow symbol-->
+        </div>
+        <div id="reset">
             <button id="reset">Reset</button>
+        </div>
     </div>
 
     <!--<button id="reorder">View Chronologically</button>-->
@@ -57,6 +64,7 @@
     </footer>
 </body>
 <script src="script.js" defer></script>
+<script src="views.js" defer></script>
 </html>
 
 <!--FORMAT-->

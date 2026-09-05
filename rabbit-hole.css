@@ -1,0 +1,80 @@
+#scrollable-image {
+    position: relative;
+}
+
+#scrollable-image button {
+  background-color: transparent;
+  border: none;
+  color: rgb(158, 158, 212);
+  /*padding: min(1vh, 1vw) min(2vh, 2vw);*/
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  font-size: min(5vh, 5vw);
+  margin: min(0.5vh, 0.5vw);
+  z-index: 2;
+}
+
+#scrollable-image button:hover {
+  background-color: rgb(158, 158, 212);
+  color: white; 
+}
+
+#right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#up {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#down button {
+    background-color: transparent;
+    border: none;
+    color: rgb(158, 158, 212);
+    /*padding: min(1vh, 1vw) min(2vh, 2vw);*/
+    text-align: center;
+    text-decoration: none;
+    font-size: min(5vh, 5vw);
+    margin: min(0.5vh, 0.5vw);
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#down button:hover {
+  background-color: rgb(158, 158, 212);
+  color: white; 
+}
+
+#reset button {
+  background-color: white;
+  border: min(0.25vh, 0.25vw) solid rgb(158, 158, 212);
+  color: rgb(158, 158, 212);
+  padding: min(1vw, 1vh) min(2vw, 2vh);
+  text-align: center;
+  text-decoration: bold;
+  font-size: min(2vh, 2vw);
+  /*margin: 8px 2px 4px 2px;*/
+  border-radius: min(10vw, 10vh);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#reset button:hover {
+  background-color: rgb(158, 158, 212);
+  border: min(0.25vh, 0.25vw) solid rgb(158, 158, 212);
+  color: white; 
+}
