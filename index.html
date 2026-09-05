@@ -5,6 +5,7 @@
     <title>Kavya Karthik</title>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="stylesheet" href="./rabbit-hole.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -31,17 +32,23 @@
         </div>
         <div id="intro-text">
             <h2 class="intro montserrat-normal">Hi, I'm a second-year Computer Science student at the University of Washington.</h2>
-            <h3 class="intro montserrat-normal">In the past year, I have been working on projects, and exploring research and other opportunities to expand my knowledge and skills in the fields of Computer Science and Mechanical Engineering. In my free time, I like to draw and try out new food spots. I tutor other students in mathematics and physics whenever the opportunity arises. I enjoy dancing and have learnt an Indian classical dance form for over a decade now!</h3>
+            <h3 class="intro montserrat-normal">In the past year, I have been working on projects, and exploring research and other opportunities to expand my knowledge and skills in the fields of Computer Science and Mechanical Engineering. </h3>
+            <h3 class="intro montserrat-normal">In my free time, I like to draw and try out new food spots. I tutor other students in mathematics and physics whenever the opportunity arises. I enjoy dancing and have learnt an Indian classical dance form for over a decade now!</h3>
         </div>
     </div>
 
     <div id="rabbit-hole">
-        <a href="./orchid.html">
-            <h2>Current Rabbit Hole: Reverse Engineering Lego</h2>
+            <h2 class="rabbit montserrat-normal"><b>Current Rabbit Hole: Reverse Engineering Lego</b></h2>
             <div id="scrollable-image">
-                <img class="isometric-view" src="./assets/orchid/isometric.png" alt="Orchid" />
+                <button id="up">&#8593;</button> <!--up arrow symbol-->
+                <button id="left">&#8592;</button> <!--left arrow symbol-->
+            
+                <img class="isometric-view" id="main-image" src="./assets/orchid/isometric.png" alt="Orchid" />
+ 
+                <button id="right">&#8594;</button> <!--right arrow symbol-->
+                <button id="down">&#8595;</button> <!--down arrow symbol-->
             </div>
-        </a>
+            <button id="reset">Reset</button>
     </div>
 
     <!--<button id="reorder">View Chronologically</button>-->

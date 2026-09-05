@@ -80,10 +80,10 @@ img {
   display: block;
 }
 
-#rabbit-hole {
+.rabbit-hole {
   width: auto;
   /*border: 1px solid black;*/
-  margin: 0 min(2vh, 2vw);
+  margin: min(2vh, 2vw);
 }
 
 #scrollable-image {
@@ -92,8 +92,16 @@ img {
 }
 
 .isometric-view {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
+  border: 1px solid black;
+}
+
+.rabbit {
+  margin: min(4vh, 4vw) 0 min(2vh, 2vw) 0;
+  color: rgb(158, 158, 212);
+  font-size: min(4vh, 4vw);
+  /*border: 1px solid black;  */
 }
 
 /* FONTS */
