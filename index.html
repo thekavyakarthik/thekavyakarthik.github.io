@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic SC" />
     <link rel="icon" sizes="64x64" href="./assets/icon.png" type="image/png" /><!--that small image on the left side of ur browser name-->
 </head>
@@ -24,6 +25,9 @@
             <div id="sub-link">
                 <h3 class="sub-link"><a href="./assets/Kavya Karthik.pdf" target="_blank">RESUME</a></h3>
             </div>
+            <div id="sub-link">
+                <h3 class="sub-link"><a href="index.html#project">PROJECTS</a></h3>
+            </div>
         </div>
     </div>
     <div id="intro">
@@ -37,10 +41,10 @@
         </div>
     </div>
 
+    <a href="./orchid.html">
+        <h2 class="rabbit montserrat-normal"><b>Current Rabbit Hole: Reverse Engineering Lego</b></h2>
+    </a>
     <div id="rabbit-hole">
-        <a href="./orchid.html">
-            <h2 class="rabbit montserrat-normal"><b>Current Rabbit Hole: Reverse Engineering Lego</b></h2>
-        </a>
         <div id="scrollable-image">
             <button id="up">&#8593;</button> <!--up arrow symbol-->
             <button id="left">&#8592;</button> <!--left arrow symbol-->
@@ -58,9 +62,49 @@
         </div>
     </div>
 
-    <!--<button id="reorder">View Chronologically</button>-->
+    <h2 id="project" class="rabbit montserrat-normal"><b>Projects</b></h2>
+    <div id="grid-container">
+        <div class="grid-item" data-date="2024-11-01">
+            <a href="https://athenaproductivity.github.io/">
+                <!--<h3 class="date">October 2024 - June 2025</h3>-->
+                <h1 class="title">Athena Productivity</h1>
+                <h3 class="subtitle"><i>Project Manager</i></h3>
+                <h3 class="subtitle"><i>Lead Coder</i> for the Calendar and Task features</h3>
+                <br>
+                <h3 class="subtitle">An android productivity app built with 4 other members. App has fully functional calendar, tasks, notes, and chat features with cloud storage through firebase and basic encryption.</h3>
+                 <!--project manager and lead coder for this brand new way to task</h2>-->
+            </a>
+        </div>
+        <div class="grid-item" data-date="2025-06-01">
+            <a href="https://github.com/thekavyakarthik/pi-hole">
+                <!--<h3 class="date">June 2025</h3>-->
+                <h1 class="title">Ad blocker using Raspberry Pi</h1>
+                <h3 class="subtitle">Teaching material that I prepared for an introductory class on Raspberry Pi through building a network wide Ad-blocker. </h3>
+                <h3 class="subtitle">Ran lecture to 60+ high school students.</h3>
+            </a>
+        </div>
+        <div class="grid-item" data-date="2024-07-01">
+            <a href="https://github.com/thekavyakarthik/cogworks-visualproj-buildon">
+                <!--<h3 class="date">July 2024</h3>-->
+                <h1 class="title">Image Recognition</h1>
+                <h3 class="subtitle">Used the facenet model to implement an object recognizer.</h3>
+                <h3 class="subtitle">Code is foundational and can be used to implement object recognition on any custom datase.</h3>
+                <!--used the facenet model to implement a face recognizer</h3>-->
+            </a>
+        </div>
+        <div class="grid-item" data-date="2022-02-01">
+            <a href="https://thekavyakarthik.github.io/agggtm/">
+                <!--<h3 class="date">my first website</h3>-->
+                <h1 class="title">a good girl's guide to murder</h1>
+                <h3 class="subtitle"><i>Legacy Project</i></h3>
+                <br>
+                <h3 class="subtitle">the first fully functional static website that I ever made. It's a book review website on the book 'a good girl's guide to murder'</h3>
+            </a>
+        </div>
+    </div>
+    
     <footer>
-        <h3 class="montserrat-intro">&lt;/KavyaKarthik&gt;</h3>
+        <h3 class="ending">&lt;/KavyaKarthik&gt;</h3>
     </footer>
 </body>
 <script src="script.js" defer></script>
