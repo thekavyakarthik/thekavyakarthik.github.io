@@ -82,6 +82,10 @@ img {
   /*border: 1px solid black;  */
 }
 
+#intro {
+  margin-top: min(2vh, 2vw);
+}
+
 .flex-layout {
   display: flex;
 }
@@ -160,6 +164,8 @@ footer{
 /*STYLE*/
 .title {
     font-family: "Sour Gummy", sans-serif;
+    font-weight: 800;
+    size: min(3vw, 3vh);
 }
 
 .subtitle {
