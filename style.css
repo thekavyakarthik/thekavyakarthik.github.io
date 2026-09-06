@@ -55,25 +55,27 @@ img {
   font-family: "Amatic Sc", cursive;
   font-weight: 900;
   font-size: min(8vh, 8vw);
-  /*border: 1px solid black;*/
+  /* border: 1px solid black; */
   width:auto;
+  justify-self: center;
 }
 
 #subheading {
   margin: 0;
   display: flex;
-  justify-content: space-evenly;
-  /*border: 1px solid black;*/
+  /* justify-content: space-evenly; */
+  /* border: 1px solid black; */
   width:auto;
 }
 
 .sub-link {
   margin: 0;
-  width: auto;
-  /*border: 1px solid black;*/  
+  width: 8vw;
+  /* border: 1px solid black;   */
   font-family: "Amatic Sc", cursive;
   font-weight: 700;
   font-size: min(3.5vh, 3.5vw);
+  text-align: center;
 }
 
 .intro {
