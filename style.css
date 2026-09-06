@@ -83,7 +83,7 @@ img {
 }
 
 #intro {
-  margin-top: min(2vh, 2vw);
+  padding-top: min(2vh, 2vw);
 }
 
 .flex-layout {
