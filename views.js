@@ -8,55 +8,55 @@ let currentView = 0;
 // Defining the views and their corresponding images and navigation options
 const views = {
     0: {
-        image: "assets/orchid/isometric.PNG",
+        image: "assets/orchid/isometric.png",
         left: 3,
         right: 1
     },
 
     1: {
-        image: "assets/orchid/front-right.PNG",
+        image: "assets/orchid/front-right.png",
         left: 0,
         right: 2,
         down: 5
     },
 
     2: {
-        image: "assets/orchid/right.PNG",
+        image: "assets/orchid/right.png",
         left: 1,
         up: 6
     },
 
     3: {
-        image: "assets/orchid/front-left.PNG",
+        image: "assets/orchid/front-left.png",
         left: 4,
         right: 0,
         down: 7
     },
 
     4: {
-        image: "assets/orchid/left.PNG",
+        image: "assets/orchid/left.png",
         right: 3,
         down: 8
     },
 
     5: {
-        image: "assets/orchid/front-right-frontsection.PNG",
+        image: "assets/orchid/front-right-frontsection.png",
         up: 1
     },
 
     6: {
-        image: "assets/orchid/right-top.PNG",
+        image: "assets/orchid/right-top.png",
         down: 2
     },
 
     7: {
-        image: "assets/orchid/front-left-bottom.PNG",
+        image: "assets/orchid/front-left-bottom.png",
         up: 3,
         left: 8
     },
 
     8: {
-        image: "assets/orchid/left-bottom.PNG",
+        image: "assets/orchid/left-bottom.png",
         up: 4,
         right:7
     }
