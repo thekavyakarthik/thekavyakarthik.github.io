@@ -34,12 +34,12 @@ function calculateIntroDimensions() {
         divIntroPicture.style.width = `${widthIntroPicture}px`;
         divIntroText.style.width = `${widthIntroText}px`;
         divIntroPicture.style.height = `${widthIntroPicture}px`;
-        introImage.src = './assets/profile-portrait.jpeg';
+        introImage.src = './assets/profile-portrait1.png';
     } else {
         // calculate the height for intro section
         //divIntro.classList.toggle("flex-layout", false);
         divIntro.classList.toggle("block-layout", true);
-        introImage.src = './assets/profile-landscape.jpeg';
+        introImage.src = './assets/profile-landscape1.png';
         // widthIntroPicture = vw;
         // widthIntroText = vw;
 

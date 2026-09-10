@@ -1,3 +1,10 @@
+:root {
+  --bg-color: rgb(43, 41, 42);/*rgb(231, 231, 252);*/
+  --txt-color: #a098b5; /*rgb(158, 158, 212);*/
+  --accent-color: #807588;/*rgb(189, 190, 229);*/
+  --txt-alt-color: rgba(24, 23, 21);
+}
+
 #scrollable-image {
     position: relative;
 }
@@ -5,7 +12,7 @@
 #scrollable-image button {
   background-color: transparent;
   border: none;
-  color: rgb(158, 158, 212);
+  color: var(--txt-color);
   /*padding: min(1vh, 1vw) min(2vh, 2vw);*/
   text-align: center;
   text-decoration: none;
@@ -16,8 +23,8 @@
 }
 
 #scrollable-image button:hover {
-  background-color: rgb(158, 158, 212);
-  color: white; 
+  background-color: var(--txt-color);
+  color: var(--txt-alt-color); 
 }
 
 #right {
@@ -41,7 +48,7 @@
 #down button {
     background-color: transparent;
     border: none;
-    color: rgb(158, 158, 212);
+    color: var(--txt-color);
     /*padding: min(1vh, 1vw) min(2vh, 2vw);*/
     text-align: center;
     text-decoration: none;
@@ -54,14 +61,14 @@
     transform: translateX(-50%);
 }
 #down button:hover {
-  background-color: rgb(158, 158, 212);
-  color: white; 
+  background-color: var(--txt-color);
+  color: var(--txt-alt-color); 
 }
 
 #reset button {
-  background-color: white;
-  border: min(0.25vh, 0.25vw) solid rgb(158, 158, 212);
-  color: rgb(158, 158, 212);
+  background-color: var(--txt-alt-color);
+  border: min(0.25vh, 0.25vw) solid var(--txt-color);
+  color: var(--txt-color);
   padding: min(1vw, 1vh) min(2vw, 2vh);
   text-align: center;
   text-decoration: bold;
@@ -74,7 +81,7 @@
 }
 
 #reset button:hover {
-  background-color: rgb(158, 158, 212);
-  border: min(0.25vh, 0.25vw) solid rgb(158, 158, 212);
-  color: white; 
+  background-color: var(--txt-color);
+  border: min(0.25vh, 0.25vw) solid var(--txt-color);
+  color: var(--txt-alt-color); 
 }

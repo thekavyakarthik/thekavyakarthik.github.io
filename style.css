@@ -1,12 +1,24 @@
+:root {
+  --bg-color: rgb(43, 41, 42);/*rgb(231, 231, 252);*/
+  --txt-color: #a098b5; /*rgb(158, 158, 212);*/
+  --accent-color: #807588;/*rgb(189, 190, 229);*/
+  --txt-alt-color: rgba(24, 23, 21);
+}
+
+html {
+  scrollbar-color: var(--accent-color) var(--bg-color);
+  scrollbar-width: auto;
+}
+
 body {
   /*margin: 10px;
   min-height: 90vh;*/
-  background-color: rgb(231, 231, 252);
+  background-color: var(--bg-color);
 }
 
 a {
   text-decoration: none;
-  color: #ffffff; /*#ededfa;/* rgb(158, 158, 212);*/
+  color: var(--txt-alt-color);
 }
 
 h2 {
@@ -33,6 +45,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  /* border: 1px solid black; */
 }
 
 /* FIXING HEADER AND ALLOWING CENTER OF ELEMENTS */
@@ -47,7 +60,10 @@ img {
   justify-content: center;
   /*border: 1px solid black;*/
   margin-bottom: min(2vh, 2vw); 
-  background-color: rgb(189, 190, 229);
+  background-color: var(--accent-color);
+  /* background-color: var(--bg-color); */
+  /* border-bottom: min(0.2vh, 0.2vw) solid var(--accent-color); */
+  /* box-shadow: 0 8px 16px -6px var(--txt-color); */
 }
 
 .heading {
@@ -70,8 +86,10 @@ img {
 
 .sub-link {
   margin: 0;
-  width: 8vw;
+  /* width: max(80px, 8vw); */
+  /*min-width: 80px;*/
   /* border: 1px solid black;   */
+  margin: 0 max(1vw, 10px);
   font-family: "Amatic Sc", cursive;
   font-weight: 700;
   font-size: min(3.5vh, 3.5vw);
@@ -80,12 +98,14 @@ img {
 
 .intro {
   margin: min(2vh, 2vw);
-  color: rgb(158, 158, 212);
-  /*border: 1px solid black;  */
+  color: var(--txt-color);
+  /* border: 1px solid black;  */
 }
 
 #intro {
-  padding-top: min(2vh, 2vw);
+  /* padding-top: min(2vh, 2vw); */
+  padding: 0;
+  /* border: 1px solid black; */
 }
 
 .flex-layout {
@@ -108,7 +128,7 @@ img {
   /*border: 1px solid black;*/
   margin: 0 auto;
   display: flex;
-  background-color: rgb(231, 231, 252);
+  background-color: var(--bg-color);
 }
 
 .isometric-view {
@@ -119,7 +139,7 @@ img {
 
 .rabbit {
   margin: min(5vh, 5vw) 0 min(2vh, 2vw) 0;
-  color: rgb(158, 158, 212);
+  color: var(--txt-color);
   font-size: min(4vh, 4vw);
   /*border: 1px solid black;  */
 }
@@ -135,23 +155,24 @@ img {
 }
 
 #grid-container a {
-  color: rgb(158, 158, 212);
+  color: var(--txt-color);
 }
 
 .grid-item {
   padding: 20px;
   text-align: center;
-  border: 3px solid rgb(189, 190, 229);
+  border: 3px solid var(--accent-color);
 }
 
-footer{
+footer {
   width: 100%;
   display: grid;
   margin: 0;
   justify-content: center;
-  /*border: 1px solid black;*/
-  background-color: rgb(189, 190, 229);
-  color: white;
+  /* border: 1px solid black; */
+  background-color: var(--accent-color);
+  color: var(--txt-alt-color);
+  /* border-top: 1px solid var(--accent-color); */
 }
 
 .ending {
