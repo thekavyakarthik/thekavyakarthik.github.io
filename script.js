@@ -13,7 +13,7 @@ function offsetIntro() {
     const headerHeight = divHeader.offsetHeight;
 
     const body = document.body;
-    body.style.marginTop = `${headerHeight}px`;
+    body.style.marginTop = `${headerHeight + 0.01*vh}px`;
 }
 
 function calculateIntroDimensions() {
